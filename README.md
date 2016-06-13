@@ -5,3 +5,4 @@ Learnings in Protractor
 2. spec files
 3. page pattern
 4. useful components
+5. browser params
