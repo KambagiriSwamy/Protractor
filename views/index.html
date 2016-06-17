@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Protractor Example</title>
+	<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+</head>
+<body ng-app="myApp" ng-controller="myCtrl">
+<input type="text" name="username" ng-model="username"></input><br><br>
+<input type="button" id="b1" value="click me" ng-click="clicked()"></input>
+<script>
+	angular.module('myApp',[])
+	.controller('myCtrl',function($scope){
+		$scope.username='';
+
+		$scope.clicked = function(){
+			
+				alert($scope.username);
+		}
+	});
+</script>
+</body>
+</html>
